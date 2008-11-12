@@ -1,0 +1,5 @@
+require "video_fu"
+require "kyte"
+require "youtube"
+require "vimeo"
+require "view_helpers"

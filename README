@@ -1,0 +1,24 @@
+VideoFu
+=======
+
+Converts a URL into an embedded video object. (http://www.youtube.com/watch?v=5pFv8CAniYQ)
+
+Currently works with: YouTube, KyteTV, Vimeo
+
+
+Example
+=======
+
+<%= video_fu "http://www.youtube.com/watch?v=5pFv8CAniYQ" %>
+
+Outputs:
+  <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/5pFv8CAniYQ&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/5pFv8CAniYQ&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+
+
+<%= video_fu "http://vimeo.com/2040753" %>
+
+Outputs:
+  <object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2040753&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=2040753&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
+
+
+Copyright (c) 2008 Beamer W., released under the MIT license
