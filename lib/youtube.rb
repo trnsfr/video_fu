@@ -8,7 +8,7 @@ class VideoFu::YouTube
 
 
   def extract_params(url)
-    parsed_url = /v=([a-zA-Z0-9]*)/.match(url)
+    parsed_url = /v=([^&]*)/.match(url)
     self.id = parsed_url[1]
     return self
   end
